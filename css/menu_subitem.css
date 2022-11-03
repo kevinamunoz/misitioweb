@@ -1,0 +1,12 @@
+li{  
+display: inline-block;
+padding: 15px;
+background-color: bisque;
+color: black;
+font-size: 2em;
+cursor: pointer;
+}
+ul{
+    height: 60px;
+    display: inline-block;
+}
