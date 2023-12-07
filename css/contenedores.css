@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin:     0;
+
+}
+
+body {
+    background-color: rgb(238, 220, 220)
+}
+
+.box-text {
+    color: rgb(0, 0, 0);
+    align-items: center;
+    display: flex;
+
+    justify-content: center
+    
+    
+}
+
+.contenedor1 {
+    border-radius: 8px;
+    border: 10px double black;
+    justify-content: center;
+    display: flex;
+    margin: 20px;
+    width: 260px;
+    height: 260px;
+    background-color: rgb(148, 17, 235);
+
+    box-shadow: 40px 20px 38px rgb(165, 94, 247);
+}
+
+.PRIMER {
+    justify-content: center;
+    display: flex;
+}
+
+.SEGUNDO {
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor2 {
+    border-radius: 8px;
+    border: 10px black double;
+    justify-content: center;
+    margin: 20px;
+    display: flex;
+    width: 260px;
+    height: 260px;
+    background-color: rgb(241, 7, 7);
+
+    box-shadow: 40px 25px 30px rgb(184, 53, 53);
+}
+
+.contenedor3 {
+    border-radius: 8px;
+    border: 10px black double;
+    justify-content: center;
+    margin: 20px;
+    display: flex;
+    width: 260px;
+    height: 260px;
+    background-color: rgb(253, 237, 7);
+ 
+    box-shadow: 40px 25px 30px rgb(248, 252, 32);
+}
+
+.TERCER {
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor4 {
+    border-radius: 8px;
+    border: 10px black double;
+    justify-content: center;
+    margin: 20px;
+    display: flex;
+    width: 260px;
+    height: 260px;
+    background-color: rgb(55, 255, 5);
+
+    box-shadow: 40px 30px 25px rgb(134, 243, 84);
+}
+
+.contenedor5 {
+    border-radius: 8px;
+    border: 10px black double;
+    justify-content: center;
+    margin: 20px;
+    display: flex;
+    width: 260px;
+    height: 260px;
+    background-color: rgb(14, 248, 197);
+
+    box-shadow: 40px 30px 25px rgb(90, 250, 229);
+}
+
+.contenedor6 {
+    border-radius: 8px;
+    border: 10px double black;
+    justify-content: center;
+    margin: 20px;
+    display: flex;
+    width: 260px;
+    height: 260px;
+    background-color: rgb(11, 7, 247);
+
+    box-shadow: 40px 30px 25px rgb(81, 92, 253);
+}
+

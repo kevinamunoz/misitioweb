@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.inicio{
+    padding: 5em 5em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3em;
+    background: cornflowerblue;
+
+}
+.box{
+    width: 380px;
+    border: 1px solid #040404;
+    padding: 1em;
+    background: #fff;
+}
+.titulo{
+    text-align: center;
+    margin: .2em 0;
+    color: #232323;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    border: 1px solid #040404;
+    text-align: center;
+}
+.calendario{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+
+}
+.day{
+    list-style: none;
+    text-align: right;
+    padding: .3em .5em;
+    color: #444;
+    font-size: .7em;
+    border: 1px solid #040404;
+
+
+}
+.day-name{
+    background: #eee;
+    font-weight: 700;
+    text-align: center;
+
+
+}
+.first-day{
+    grid-column-start: 1;
+}

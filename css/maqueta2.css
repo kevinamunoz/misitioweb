@@ -1,0 +1,89 @@
+*{
+    padding: 1.5em;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.primer{
+    display: grid;
+    grid-template: "cabeza        empty         empty" 150px
+                    "imagen-prin  imagen-prin  imagen-prin"500px
+                    "aticulo1     aticulo2      aticulo3" 400px
+                    "txt-art1     txt-art2      txt-art3" 800px/
+                     570px        570px         570px; 
+    grid-gap: 80px; 
+           
+}
+.header{
+    grid-area: cabeza;
+    background-color: rgb(0, 4, 7);
+    border-radius: 20px;
+}
+.img-principal{
+    grid-area: imagen-prin;
+    background-color: gray;
+    border-radius: 20px;
+}
+.img-articulo{
+    background-color:gray;
+    border-radius: 40px;
+    box-shadow: 3px 3px 3px 3px rgb(95, 93, 93);
+}
+.one{
+    grid-area: aticulo1;
+}
+.two{
+    grid-area: aticulo2;
+}
+.three{
+    grid-area: aticulo3;
+}
+
+.art1{
+    grid-area: txt-art1;
+}
+.art2{
+    grid-area: txt-art2;
+}
+.art3{
+    grid-area: txt-art3;
+}
+.texto{
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+.txt{
+    padding: 5px;
+    font-size: 1.2em;
+}
+@media only screen and (max-width:1050px){
+    .primer{
+        display: grid;
+        grid-template: "cabeza        empty         empty" 150px
+                        "imagen-prin  imagen-prin  imagen-prin"250px
+                        "aticulo1     aticulo2      aticulo3" 250px
+                        "txt-art1     txt-art2      txt-art3" 800px/
+                         220px        220px         220px; 
+        grid-gap: 60px; 
+               
+    }
+}
+@media only screen and (max-width:825px){
+    .primer{
+        display: grid;
+        grid-template: "cabeza" 12%
+                        "imagen-prin"25%
+                        "aticulo1" 20%
+                        "txt-art1" 20%
+                        "aticulo2"20%
+                        "txt-art2"20%
+                        "aticulo3"20%
+                        "txt-art3" 20%/
+                        100%   100%   100%;
+        grid-gap: 80px; 
+               
+    }
+}

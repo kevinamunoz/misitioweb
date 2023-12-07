@@ -1,0 +1,65 @@
+.box-header{
+    display: grid;
+    grid-template:"logo mac ipad iphone watch airpods TV entretenimiento soporte comprar busqueda" 40px 
+                "img     img    img     img     img     img     img     img     img     img  img     "/
+                    125px   125px     125px      125px    125px       125px      125px     125px      125px    125px ;
+}
+.logo{
+    grid-area: logo;
+    background-color: rgb(207, 203, 203);
+}
+.mac{
+    grid-area: mac;
+    background-color: grey;
+}
+.ipad{
+    grid-area: ipad;
+    background-color: grey;
+}
+.iphone{
+    grid-area: iphone;
+    background-color: grey;
+}
+.watch{
+    grid-area: watch;
+    background-color: grey;
+}
+.airpods{
+    grid-area: airpods;
+    background-color: grey;
+}
+.TV{
+    grid-area: TV;
+    background-color: grey;
+}
+.entretenimiento{
+    grid-area: entretenimiento;
+    background-color: grey;
+}
+.soporte{
+    grid-area: soporte;
+    background-color: grey;
+}
+.comprar{
+    grid-area: comprar;
+    background-color: grey;
+}
+
+.busqueda{
+    grid-area: busqueda;
+    background-color: rgb(207, 203, 203);
+}
+.img{
+    grid-area: img;
+    background-color: rgb(175, 95, 95);
+    height: 500px;
+}
+.texto-grid{
+    color: rgb(12, 11, 11);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+

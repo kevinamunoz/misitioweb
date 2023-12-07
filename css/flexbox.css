@@ -1,0 +1,119 @@
+h1{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.box{
+    width: 400px;
+    height: 400px;
+    background-color: rgb(23, 46, 86);
+    margin: 15px; 
+    font-size: 3em;
+    color: azure;
+
+}
+.box-direction{
+    display: flex;
+    flex-direction: flex;
+}
+.box-wrap{
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+}
+.box-nowrap{
+    display: flex;
+flex-flow: row nowrap;
+}
+.box-wrap-continuo{
+    display: flex;
+    flex-flow: column wrap;
+    height: 415px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding-bottom: 40px;
+}
+.box-space-between{
+    display: flex;
+    justify-content: space-between;
+}
+.box-space-around{
+    display: flex;
+    justify-content: space-around;
+}
+.box-space-evenly{
+    display: flex;
+    justify-content: space-evenly;
+}
+.box-flex-start{
+    display: flex;
+    justify-content: flex-start;
+}
+.box-flex-end{
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: row-reverse;
+}
+.box-flex-center{
+    display: flex;
+    justify-content: center;
+}
+.box-aling-start{
+    display: flex;
+    align-items: flex-start;
+}
+.box43{
+    height: 350px;
+}
+.box44{
+    height: 200px;
+}
+.box45{
+    height: 150px;
+}
+.box46{
+    height: 300px;
+}
+.box-aling-end{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 5px;
+    border-bottom: 2px solid rgb(17, 17, 16);
+    border-left:2px solid rgb(17, 16, 15); ;
+    width: 420px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 6px;
+    text-align: center;
+    
+}
+.box47{
+    height:550px ;
+    background-color: rgb(10, 65, 246);
+}
+.box48{
+    height:300px;
+    background-color: rgb(5, 56, 98);
+}
+
+.box49{
+    height: 200px;
+    background-color: rgb(15, 63, 221);
+}
+
+.box50{
+    height:150px ;
+    background-color: rgb(7, 140, 235);
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+}
+.text{
+    transform: rotate(-90deg);
+    font-size: 2em;
+    height: 200px;
+    margin-right: 15.6em;
+    margin-top: 5.6em;
+    position:absolute;
+    
+}

@@ -1,0 +1,249 @@
+.principal{
+    width: 100%;
+    display: grid;
+    grid-template:"empty-1  barra empty 1"70px/
+                   1fr       1250px    1fr ;
+    justify-content: center;
+    
+}
+.nav{
+    font-size: 15px;
+    background-color: gainsboro;
+    text-align: center;
+    height: 25px;
+    
+}
+.barra {
+    width: 100%;
+    grid-area: barra;
+    display: grid;
+    grid-template:"logo    busca    ubicacion   carrito   cmr   cuenta"70px/
+                    220px    1fr       160px        110px   160px   106px ;
+    justify-content: center;
+    border: 3em;
+    border-color: black;
+}
+.box {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.logo-hc{
+    width: 100%;
+}
+.compra {
+    background-color: rgb(221,0,33);
+    color: white;
+    width: 26px;
+    height: 26px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input[type="text"] {
+    padding: 11px;
+    margin-left: 2px;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+input[type="text"]:focus {
+    outline: none;
+}
+.seeker {
+    grid-area: busca;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template:"buscador  lupa" 70px/
+                    1fr         40px;
+    margin-left: 20px;
+}
+.busca{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    grid-area: buscador;
+    border-left: 1px solid rgb(228, 227, 227);
+    border-bottom: 1px solid rgb(228, 227, 227);
+    border-top: 1px solid rgb(228, 227, 227);
+}
+.lupa{
+    width: 100%;
+    grid: lupa;
+
+}
+.lupa:hover,.ubicacion:hover,.location:hover,.shop:hover,.userlogo:hover,.cmr:hover,.logo-hc:hover{
+    cursor: pointer;
+}
+.ubicacion{
+    padding-left: 40px;
+    display: flex;
+    grid-area: ubicacion;
+}
+.location{
+    font-size: 1.4em;
+}
+.para {
+    font-size: 0.7em;
+    text-align: left;
+}
+.city{
+    color: rgb(0,114,206);
+    font-size: 1.3em;
+}
+.para2 {
+    font-size: 0.6em;
+    text-align: left;
+}
+.cmr {
+    display: flex;
+}
+.puntos,.cart {
+    font-size: 1.5em;
+}
+.shop{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.burger,.s-salida,.seeker-cell,.logo-hc-mini{
+    display: none;
+}
+@media only screen and (max-width: 1250px) {
+    .logo-hc{
+        display: none;
+    }
+
+    .logo-hc-mini{
+        display: flex;
+        width: 100%;
+    }
+
+    .para,.city,.para2,.puntos,.user,.cmr, .ubicacion,.busca{
+        display: none;
+    }
+    .principal{
+        width: 100%;
+        display: grid;
+        grid-template:"empty-1  barra empty 1"55px/
+                       10px       1fr    10px ;
+        justify-content: center;
+        border-bottom: 1px solid grey;
+    }
+    .burger{
+        grid-area: burger;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.8em;
+    }
+    .barra {
+        width: 100%;
+        grid-area: barra;
+        display: grid;
+        grid-template:"burger logo    lupa   carrito   cuenta"55px/
+                       50px  40px     1fr       80px     40px ;
+        justify-content: center;
+        
+    }
+    .seeker{
+        grid-area: lupa;
+        text-align: right;
+        margin: 0;
+        display: flex;
+        
+    }
+
+    .lupa{
+        border: none;
+        right: 10px;
+        display: flex;
+        width: 100%;
+        justify-content: right;
+        margin-right: 30px;
+    }
+
+    .shop{
+        grid-area: carrito;
+        padding: 0;
+        margin: 0;
+    }
+
+    .userlogo{
+        grid-area: cuenta;
+        padding: 0;
+        margin: 0;
+        font-size: 2em;
+    }
+
+    .seeker-cell{
+        background-color: white;
+        width: 100%;
+        height: 55px;
+        position: absolute;
+        display: none;
+        align-items: center;
+        justify-content: center ;
+        grid-template: "lupaa seekermini exit" 55px/
+                        50px    1fr            30px;
+        border-bottom: 1px solid rgb(199, 199, 199);
+        box-shadow: 2px 0 10px GREY ;
+        transition: opacity 1s ease-in-out;
+    }
+    .seekerMini{
+        grid-area: seekermini;
+    }
+
+    .lupa2{
+        grid-area: lupaa;
+        justify-content: center;
+        display: flex;
+        font-size: 1.2em;
+    }
+
+    .s-salid{
+        grid-area: exit;
+    }
+
+    .s-salid:hover{
+        cursor: pointer;
+    }
+
+    input[type="text"] {
+        padding: 10 px;
+        margin-left: 2px;
+        width: 100%;
+        border: none;
+        font-size: 1.1em;
+    }
+
+    .seekerCell-hidden{
+        background-color: white;
+        width: 100%;
+        height: 55px;
+        position: absolute;
+        display: grid;
+        align-items: center;
+        justify-content: center ;
+        grid-template: "lupaa seekermini exit" 55px/
+                        50px    1fr            30px;
+        border-bottom: 1px solid rgb(199, 199, 199);
+        box-shadow: 2px 0 10px grey ;
+        transition: opacity 2s ease-in-out;
+        
+    }    
+}
+.cuerpo{
+    background-color: rgb(220, 220, 241);
+}

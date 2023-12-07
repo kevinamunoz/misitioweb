@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(235, 228, 217);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+h1 {
+    font-family:"waltograph-disney";
+    font-size: 5em;
+    color: rgb(44, 140, 219);
+}
+@font-face {
+    font-family: "waltograph-disney";
+    src: url(../font/waltograph-disney/waltographUI.ttf)
+}

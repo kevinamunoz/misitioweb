@@ -1,0 +1,17 @@
+
+body {
+    background-color: rgb(252, 252, 250);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+h1 {
+    font-family:"game-of-thrones";
+    font-size: 5em;
+    color: black;
+}
+@font-face {
+    font-family: "game-of-thrones";
+    src: url(../font/game-of-thrones/Game\ of\ Thrones.ttf)
+}

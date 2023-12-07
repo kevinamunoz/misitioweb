@@ -1,0 +1,66 @@
+/* Reset de estilos para el body */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Color de fondo para el cuerpo */
+}
+
+.puntuaciones {
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd; 
+    border-radius: 4px;
+}
+
+
+.puntuacion-item {
+    margin-bottom: 15px;
+}
+
+
+label {
+    display: inline-block;
+    width: 120px;
+    font-weight: bold;
+}
+
+
+input {
+    width: 50px;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ddd; 
+    border-radius: 4px;
+}
+
+
+#graficarBtn {
+    padding: 10px;
+    background-color: #ff9900; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Estilos para las barras de puntuación */
+.barra-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.barra {
+    height: 20px;
+    background-color: #ff9900; /* Amarillo característico de Amazon */
+    border-radius: 4px;
+}
+
+.porcentaje {
+    margin-left: 10px;
+    font-weight: bold;
+    color: #555; /* Color de texto más oscuro */
+}

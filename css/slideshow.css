@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main-content{
+    display:grid;
+    grid-template: "empty-left  main-nav    empty-rigth"
+                   "empty-left  box-marco   empty-rigth"
+                   "empty-left  iconos      empty-rigth"/
+                    1fr           1000px     1fr;
+}
+.main-nav{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+}
+.main-nav{
+    grid-area: main-nav;
+}
+.logo-box{
+    float: left;
+}
+.img-logo{
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 50px;
+    background-color: white;
+
+}
+
+.main-ul{
+    list-style: none;
+    font-size: 1.3em;
+    margin-top: 15px;
+    margin-left: 40px;
+    text-align: right;
+}
+
+.style-li{
+    display: inline-block;
+}
+.style-item{
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 60;
+    text-decoration:none;
+    padding: 15px 25px 0 25px;
+}
+
+.img-guitar1{
+    width: 1000px;
+    height:700px; 
+    
+}
+.iconos{
+    grid-area: iconos;
+    height: 500px;
+}
+.flecha-adelante{
+    width: 80px;
+    position: relative;
+    top: 340px;
+    left: 82%;
+    z-index: 20;
+}
+.flecha-adelante:hover{
+    cursor: pointer;
+}
+
+.flecha-atras{
+    width: 80px;
+    position: relative;
+    top: 340px;
+    left: 10px;
+    z-index: 20;
+}
+.flecha-atras:hover{
+    cursor: pointer;
+}
+.img-guitar1{
+    grid-area: img-guitar1;
+    position: relative;
+    top:-85px;
+    z-index: 10;
+}
+.box-marco{
+    grid-area: box-marco;
+}

@@ -1,0 +1,135 @@
+*{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    text-align: center;
+}
+.box-main{
+    margin: 0 70px;
+    display: grid;
+    grid-template:"img-box-main empty "/
+                   435px        1fr;
+}
+img{
+border-radius: 10px;
+}
+.img-box-main{
+grid-area:img-box-main;
+width: 100%;
+display: grid;
+grid-template:"img-box     img-box   img-box     img-box   img-box     img-box   img-box " 435px
+              "empty-0     empty-0   empty-0     empty-0   empty-0     empty-0   empty-0" 30px
+              "box-img-1   empty-1   box-img-2   empty-2   box-img-3   empty-3   box-img-4" 90px /
+               90px        25px      90px        25px      90px         25px     90px
+}
+.img-box{
+ grid-area: img-box;
+ width: 100%;
+ cursor: pointer;
+}
+.img-mini{
+    cursor: pointer;
+    width: 100%;
+}
+.box-img-1{
+    grid-area: box-img-1;
+}
+.box-img-2{
+    grid-area: box-img-2;
+}
+.box-img-3{
+    grid-area: box-img-3;
+}
+.box-img-4{
+    grid-area: box-img-4;
+}
+.box-img-mini{
+    border: 2px solid rgb(255, 125, 26);
+    border-radius: 15px;
+}
+.img-mini-act{
+    opacity: 0.4;
+}
+.icon{
+width: 50px;
+height: 50px;
+background-color: rgb(230, 230, 230);
+display: flex;
+justify-content: center;
+align-items: center;
+font-weight: 900;
+border: 2px solid whitesmoke;
+}
+.cant-box{
+    display: flex;
+    flex-direction: row;
+}
+.btn-restar, .btn-sumar{
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+color:rgb(255, 125, 26) ;
+font-size: 2.5em;
+cursor: pointer;
+}
+.cant-obj{
+    color: rgb(48, 48, 48);
+    font-size: 1.3em;
+}
+/* lighbox */
+
+.lightbox{
+
+    position: fixed;
+    background-color: rgb(68, 68, 68,.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.main-lightbox{
+    width: 550px;
+    height: 600px;
+    background: red;
+}
+.btn-box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.btn-style{
+    border-radius: 50%;
+    width: 46px;
+    height: 46px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+
+.btn-atras{
+    left: -25px;
+    z-index: 20;
+}
+.btn-adelante{
+    left: 95%;
+    z-index: 20;
+    top: 125px;
+}
+.style-btn{
+    font-weight: 900;
+    font-size: 1.3em;
+}
+.img-main-light{
+    position: relative;
+    top: -88px;
+    width: 100%;
+    border-radius:20px ;
+    z-index: 10;
+}

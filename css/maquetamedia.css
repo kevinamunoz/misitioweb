@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-box{
+    display: grid;
+    grid-gap:20px;
+    grid-template:"empty-left           main-header         empty-head          empty-head          empty-head       empty-head         empty-right" 120px
+                  "empty-left           main-img            main-img            main-img            main-img         main-img           empty-right" 400px
+                  "empty-left           img-articulo-1      empty-img-1         img-articulo-2      empty-img-2      img-articulo-3     empty-right" 250px
+                  "empty-left           text-articulo-1     empty-img-1         text-articulo-2     empty-img-2      text-articulo-3    empty-right" 140px /
+                  1fr                   27%                 25px                27%                 25px             27%                1fr;
+                }
+.main-header{
+    margin-top: 20px;
+    grid-area:  main-header;
+    background-color: gray;
+}
+.main-img{
+    grid-area: main-img;
+    background-color: blue;
+}
+.img-articulo-1{
+    grid-area:img-articulo-1;
+    background-color: black;
+}
+.text-articulo-1{
+    grid-area: text-articulo-1;
+}
+.img-articulo-2{
+    grid-area: img-articulo-2 ;
+    background-color: black;
+}
+.text-articulo-2{
+    grid-area: text-articulo-2;
+}
+.img-articulo-3{
+    grid-area: img-articulo-3 ;
+    background-color: black;
+}
+.text-articulo-3{
+    grid-area: text-articulo-3;
+}
+.style-box{
+    border-radius: 6px;
+}
+.style-articulo{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.3em;
+    text-align: justify;
+    color: black;
+    line-height: 1.4em;
+}
+@media only screen and (max-with:1050px) {
+    .main-box{
+        grid-template:  "empty-left           main-header         empty-head          empty-head        empty-right" 120px
+                        "empty-left           main-img            main-img            main-img          empty-right" 400px
+                        "empty-left           img-articulo-1      empty-img-1         img-articulo-2    empty-right" 250px
+                        "empty-left           text-articulo-1     empty-img-1         text-articulo-2   empty-right"  
+                        "empty-left           img-articulo-3      empty-img-1         empty-img-3       empty-right" 250px                                                                                     " 
+                        "empty-left           text-articulo-3     empty-img-1         empty-img-3       empty-right"   /                                                                        "          
+                        1fr                   43%                 25px                43%               1fr;
+    }
+}

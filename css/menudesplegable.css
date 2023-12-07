@@ -1,0 +1,62 @@
+/* estilos generales */
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-size: 1.5em;
+    background: rgb(0, 0, 0);
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+    display: table;
+    display: block;
+    position: absolute;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+}
+nav a{
+    text-decoration: none;
+    display: block;
+    padding: 0 2.5em;
+    color: white;
+    border: 1px solid white;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+body {
+    background-color: gainsboro;
+}
+/* menu primer nivel */
+nav > ul > li {
+    float: left;
+    width: 320px;
+    line-height: 70px;
+}
+
+nav li {
+    position: relative;
+}
+
+nav li li {
+    max-height: 0;
+    overflow: hidden;
+}
+
+nav li:hover > ul > li{
+    visibility: visible;
+    max-height: 500px;
+    overflow: visible;
+}
+nav ul ul ul{
+    left: 100%;
+    top: 0;
+}
+.icono{
+    color: white;
+}
+a:hover{
+    background-color:rgb(98, 91, 91);
+    color:white;
+}

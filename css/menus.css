@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.box {
+    display: inline-block;
+    padding: 20px;
+    padding-left: 30px;
+    color: black;
+    font-size: 30px;
+
+}
+
+.menu {
+    text-align: right;
+    background-color: blanchedalmond;
+    height: 80px;
+}

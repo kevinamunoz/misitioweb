@@ -1,0 +1,45 @@
+h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+}
+.box-main-1{
+    display: grid;
+    grid-template-columns: 200px 100px 300px;
+    grid-template-rows: 200px 400px 100px;
+    border:2px solid gainsboro;
+    width: 600px;
+}
+.box{
+    background-color: gray;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: azure;
+    font-size: 1.4em;
+
+}
+.box-main-2{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: repeat(3,200px);
+    border:2px solid gainsboro;
+    width: 600px;
+}
+.box-main-3{
+    display: grid;
+    grid-template-columns: repeat(2,220px) 1fr;
+    grid-template-rows:100px repeat(2,200px) 100px;
+    border:2px solid gainsboro;
+    width: 600px;
+}
+.box3-1{
+    background-color: blueviolet;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.box3-8{
+    background-color: blue;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
